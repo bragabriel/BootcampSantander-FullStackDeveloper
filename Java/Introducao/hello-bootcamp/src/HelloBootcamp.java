@@ -1,0 +1,51 @@
+
+public class HelloBootcamp {
+
+	public static void main(String[] args) {
+		System.out.println("Hello Bootcamp Full Stack Developer!");
+		
+		int a = 2;
+		int b = 3;
+		System.out.println("Result: " + (a+b));
+
+		Gato gato = new Gato("Garfield", "Laranja", 4);
+		
+		Livros livros = new Livros();
+		livros.setNome("Sherlock Holmes");
+		livros.setNpags(250);
+		
+		System.out.println(gato.getNome()); 
+		System.out.println(livros.getNome());
+		
+		System.out.println(gato);
+		System.out.println(livros);
+	}
+
+}
+
+class Livros{
+	private String nome;
+	private Integer npags;
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public Integer getNpags() {
+		return npags;
+	}
+	public void setNpags(Integer npags) {
+		this.npags = npags;
+	}
+	
+	@Override
+	public String toString() {
+		return "Livros [nome=" + nome + ", npags=" + npags + "]";
+	}
+	
+	
+	
+	
+}
