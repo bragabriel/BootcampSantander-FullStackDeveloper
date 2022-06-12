@@ -1,0 +1,64 @@
+<!--
+    Estabelece o tamanho inicial do item antes das distribuições de espaço restante dentro dele, usando como base o conteúdo disposto
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex-basis</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 300px;
+            margin: 20px;
+        }
+
+        .item{
+            background-color: orangered;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .bAuto{
+            flex-basis: auto;
+        }
+
+        .b-0{
+            flex-basis: 0;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .fg-2{
+            flex-grow: 2;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <p>auto</p>
+    <div class="flex-container">
+        <div class="item bAuto fg-1">A</div>
+        <div class="item bAuto fg-1">BBB</div>
+        <div class="item bAuto fg-1">C</div>
+        <div class="item bAuto fg-2">DDD</div>
+    </div>
+
+    <p>0 (zero)</p>
+    <div class="flex-container">
+        <div class="item b-0 fg-1">AAAAAAAAA</div>
+        <div class="item b-0 fg-1">BBB</div>
+        <div class="item b-0 fg-1">C</div>
+        <div class="item b-0 fg-2">DDD</div>
+    </div>
+</body>
+</html>
