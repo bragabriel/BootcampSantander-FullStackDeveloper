@@ -6,7 +6,8 @@
 
 </div>
 
-#### O <b>Santander Bootcamp Fullstack Developer</b> é um programa de estudos intensivos, desenvolvido pela [Digital Innovation One](https://web.dio.me/home), para desenvolvedores que querem evoluir suas skills englobando o desenvolvimento de software e utilizando tecnologias essenciais para programação Front-End e Back-End.
+#### O **Santander Bootcamp Fullstack Developer** é um _programa de estudos intensivos_, desenvolvido pela **[Digital Innovation One](https://web.dio.me/home)** em parceria com o **Santander**, para desenvolvedores que querem evoluir suas skills englobando o desenvolvimento de software e utilizando tecnologias essenciais para programação Front-End e Back-End.</br>
+#### O programa que tem o objetivo de fortalecer a comunidade tecnológica brasileira e potencializar a formação de talentos em desenvolvimento de software com oportunidades de contratação no Santander.</br></br>
 
 ## Módulos do Bootcamp
 
@@ -14,12 +15,12 @@
 - [Javascript](https://github.com/bragabriel)
 - [Angular](https://github.com/bragabriel)
 - [Java](https://github.com/bragabriel/Bootcamp-FullStackDeveloper/tree/main/Java)
-- [Spring Framework](https://github.com/bragabriel)
+- [Spring Framework](https://github.com/bragabriel)</br>
 
 ## Projetos
 
-- [a](https://github.com/bragabriel)
+- [a](https://github.com/bragabriel)</br>
 
 ## Desafios de Código
 
-- [Desafios a](https://github.com/bragabriel)
+- [Desafios a](https://github.com/bragabriel)</br>
