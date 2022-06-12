@@ -1,0 +1,58 @@
+<!--
+    É a propriedade que estabelece a capacidade de redução ou compressão do tamanho de um item.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex-shrink</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 300px;
+            margin: 20px;
+        }
+
+        .item{
+            background-color: orangered;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .s-1{
+            flex-shrink: 1;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+     
+
+    </style>
+</head>
+<body>
+    <p>flex-shrink 1</p>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, vel. Iure quod sed officia excepturi, quasi unde, ullam!</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+
+  
+</body>
+</html>
