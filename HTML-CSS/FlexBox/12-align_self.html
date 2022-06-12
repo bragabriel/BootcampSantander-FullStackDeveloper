@@ -1,0 +1,76 @@
+<!--
+    É a propriedade que estabelece o alinhamento de modo individual sobre um determinado item.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-seld</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 300px;
+            margin-bottom: 10px;
+        }
+
+        .align-container{
+            align-items: center;
+        }
+
+        .item{
+            background-color: brown;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: start;
+        }
+
+        .end{
+            align-self: end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+     
+
+    </style>
+</head>
+<body>
+   <p></p>
+   <section class="flex-container align-container">
+    <div class="item auto">AAA</div>
+    <div class="item auto">123</div>
+    <div class="item auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+    <div class="item auto">Item 4</div>
+   </section>
+
+   <p></p>
+   <section class="flex-container">
+    <div class="item center">AAA</div>
+    <div class="item start">123</div>
+    <div class="item stretch">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+    <div class="item end">Item 4</div>
+   </section>
+</body>
+</html>
