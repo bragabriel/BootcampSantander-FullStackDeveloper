@@ -1,0 +1,79 @@
+<!--
+    Define a proporcionalidade de crescimentos dos itens, respeitando o tamanho de seus conteúdos internos.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex-grow</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 300px;
+            margin: 20px;
+        }
+
+        .item{
+            background-color: orangered;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .fg-0{
+            flex-grow: 0;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .fg-2{
+            flex-grow: 2;
+        }
+
+        .fg-3{
+            flex-grow: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <p>flex-grow: 0</p>
+    <div class="flex-container">
+        <div class="item fg-0">a</div>
+        <div class="item fg-0">b</div>
+        <div class="item fg-0">c</div>
+        <div class="item fg-0">d</div>
+    </div>
+
+    <p>flex-grow: 1</p>
+    <div class="flex-container">
+        <div class="item fg-1">a</div>
+        <div class="item fg-0">b</div>
+        <div class="item fg-0">c</div>
+        <div class="item fg-1">d</div>
+    </div>
+
+    <p>flex-grow: 2</p>
+    <div class="flex-container">
+        <div class="item fg-1">a</div>
+        <div class="item fg-2">b</div>
+        <div class="item fg-1">c</div>
+        <div class="item fg-1">d</div>
+    </div>
+
+    <p>flex-grow: 3</p>
+    <div class="flex-container">
+        <div class="item fg-0">a</div>
+        <div class="item fg-0">b</div>
+        <div class="item fg-3">c</div>
+        <div class="item fg-0">d</div>
+    </div>
+</body>
+</html>
