@@ -16,6 +16,12 @@ public class Main {
 		z = scan.nextInt();
 		
 		hora.obterHora(z);
+		
+		
+		//Exercício Emprestimo
+		emprestimo.calcular(1000, emprestimo.getDuasParcelas());
+		emprestimo.calcular(1000, emprestimo.getTresParcelas());
+		emprestimo.calcular(1000, 5);
 
 	}
 
