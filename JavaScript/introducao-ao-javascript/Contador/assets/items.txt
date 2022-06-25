@@ -1,0 +1,3 @@
+Arquivos que não são HTML = Imagens, arquivos JS, arquivos CSS...
+
+Componentes da página HTML.
