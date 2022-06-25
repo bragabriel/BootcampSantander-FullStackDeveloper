@@ -11,16 +11,17 @@
 
 ## Módulos do Bootcamp
 
-- [HTML + CSS3](https://github.com/bragabriel/Bootcamp-FullStackDeveloper/tree/main/HTML-CSS)
-- [Javascript](https://github.com/bragabriel)
-- [Angular](https://github.com/bragabriel)
-- [Java](https://github.com/bragabriel/Bootcamp-FullStackDeveloper/tree/main/Java)
-- [Spring Framework](https://github.com/bragabriel)</br>
+- [HTML + CSS3](https://github.com/bragabriel/Bootcamp-FullStackDeveloper/tree/main/HTML-CSS);
+- [Javascript](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/JavaScript);
+- [Angular](https://github.com/bragabriel);
+- [Java](https://github.com/bragabriel/Bootcamp-FullStackDeveloper/tree/main/Java);
+- [Spring Framework](https://github.com/bragabriel).</br>
 
 ## Projetos
 
-- [a](https://github.com/bragabriel)</br>
+- [Lading Page com Flex-Box](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Projetos-Desafios/HTML-CSS/Flex-Projeto);</br>
+- [Recriando a página de Login do Instagram](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Projetos-Desafios/HTML-CSS/Instagram-LandingPage)</br>
 
 ## Desafios de Código
 
-- [Desafios a](https://github.com/bragabriel)</br>
+- [Contador](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Projetos-Desafios/JavaScript/To-do_list)</br>
