@@ -1,10 +1,10 @@
+//funcao default
 function soma(a, b){
     return a + b;
 }
 
-console.log(soma(3, 5))
 
-
+//funcao recebendo array
 function returnEvenValues(array){
 
     let evenNums = [];
@@ -20,5 +20,20 @@ function returnEvenValues(array){
     console.log('Os números pares são: ', evenNums);
 }
 
+
+//funcao anonima
+const somaConst = function (a, b) {
+    return a + b;
+}
+
+
+
+//funcao default
+console.log(soma(3, 5))
+
+//funcao anonima
+console.log(somaConst(1, 3))
+
+//funcao recebendo array
 let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 returnEvenValues(array)
