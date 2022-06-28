@@ -12,7 +12,8 @@ output -> -1
 
 function substituiPares(array){
 
-    if(!array.length) return -1;
+    if(!array) return -1 //verificando se é do tipo Array
+    if(!array.length) return -1; //verificando se existe
     
     for(let i = 0; i < array.length; i++){
         if(array[i] === 0){
