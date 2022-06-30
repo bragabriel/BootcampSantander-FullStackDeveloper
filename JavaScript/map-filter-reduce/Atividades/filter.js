@@ -1,3 +1,5 @@
+/* Filtre e retorne todos os números pares de um array. */
+
 function filtraPares(arr){
     return arr.filter(callback)
 }
