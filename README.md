@@ -13,6 +13,7 @@
 
 - [HTML + CSS3](https://github.com/bragabriel/Bootcamp-FullStackDeveloper/tree/main/HTML-CSS);
 - [Javascript](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/JavaScript);
+    - [TypeScript](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/TypeScript);
 - [Angular](https://github.com/bragabriel);
 - [Java](https://github.com/bragabriel/Bootcamp-FullStackDeveloper/tree/main/Java);
 - [Spring Framework](https://github.com/bragabriel).</br>
@@ -20,8 +21,8 @@
 ## Projetos
 
 - [Lading Page com Flex-Box](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Projetos-Desafios/HTML-CSS/Flex-Projeto);</br>
-- [Recriando a página de Login do Instagram](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Projetos-Desafios/HTML-CSS/Instagram-LandingPage)</br>
+- [Recriando a página de Login do Instagram](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Projetos-Desafios/HTML-CSS/Instagram-LandingPage);</br>
+- [To-do List](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Projetos-Desafios/JavaScript/To-do_list).</br>
 
 ## Desafios de Código
 
-- [Contador](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Projetos-Desafios/JavaScript/To-do_list)</br>
