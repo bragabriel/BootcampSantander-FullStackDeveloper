@@ -5,7 +5,7 @@ import java.util.Scanner;
  * e a média desses números
 */
 
-public class ex03_MaiorEMedia {
+public class ex3_MaiorEMedia {
 
 	public static void main(String[] args) {
 

@@ -4,7 +4,7 @@ import java.util.Scanner;
  * Faça um programa que peça N números inteiros, calcule e mostre a quantidade
  * de números pares e a quantidade de números ímpares*/
 
-public class ex3_ParEImpar {
+public class ex4_ParEImpar {
 
 	public static void main(String[] args) {
 		
