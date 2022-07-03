@@ -25,4 +25,4 @@
 - [To-do List](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Projetos-Desafios/JavaScript/To-do_list).</br>
 
 ## Desafios de Código
-
+- [Desafios em JS](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Projetos-Desafios/JavaScript).</br>
