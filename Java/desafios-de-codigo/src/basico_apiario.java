@@ -1,5 +1,7 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
 
-public class basico_principios {
+public class basico_apiario {
 
 	public static void main(String[] args) {
 		/* Seu Júlio é proprietário de um grande apiário situado no interior da Paraíba.
@@ -20,6 +22,18 @@ public class basico_principios {
 		Obs.: Considere pi = 3.14
 		*/
 
+		Scanner leitor = new Scanner(System.in);
+    	DecimalFormat df = new DecimalFormat("0.00");
+    	double V, D, R, area, altura;
+    	
+    	while (leitor.hasNext()) {
+    		V = leitor.nextDouble();
+    		D = leitor.nextDouble();
+    		R = D/2;
+    		area = 3.14 * (R*R);
+    		altura = V / ((R*R) * 3.14);
+    		System.out.println("ALTURA = " + df.format(altura));
+    		System.out.println("AREA = " + df.format(area));
+    	}
 	}
-
 }
