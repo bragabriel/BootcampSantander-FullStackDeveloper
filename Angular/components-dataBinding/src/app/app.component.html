@@ -1,0 +1,7 @@
+{{title}}<br>
+
+{{name}}<br>
+
+<!-- Atribuindo a relação de um input com um componente -->
+<input type="text" [ngModel]="name"> <!-- One way data binding; Apenas exibe o valor da propriedade --> <br>
+<input type="text" [(ngModel)]="name"> <!-- Two way data binding; Exibe e altera o valor da propriedade -->
