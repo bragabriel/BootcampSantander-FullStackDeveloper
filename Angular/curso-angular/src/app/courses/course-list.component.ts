@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from './course';
 import { CourseService } from './course-service';
-import { Inject } from '@angular/core';
 
 @Component({
     templateUrl: './course-list.component.html'
