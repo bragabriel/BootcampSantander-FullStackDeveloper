@@ -1,11 +1,11 @@
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
-import { NavbarComponent } from "./component/navbar/navbar.component";
+import { NavBarComponent } from "./component/nav-bar/nav-bar.component";
 import { Error404Component } from "./component/error-404/error-404.component";
 
 @NgModule({
     declarations:[
-        NavbarComponent,
+        NavBarComponent,
         Error404Component,
     ],
     imports:[
@@ -16,7 +16,7 @@ import { Error404Component } from "./component/error-404/error-404.component";
             ])
     ],
     exports:[
-        NavbarComponent
+        NavBarComponent
     ]
 })
 

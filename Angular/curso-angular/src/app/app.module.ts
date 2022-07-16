@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
-import { CourseModule } from './courses/courses.module';
+import { CourseModule } from './courses/course.module';
 import { CoreModule } from './core/core.module';
 
 @NgModule({
