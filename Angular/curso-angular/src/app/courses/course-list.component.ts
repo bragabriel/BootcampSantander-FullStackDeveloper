@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from './course';
-import { CourseService } from './course.service';
+import { CourseService } from './course-service';
+import { Inject } from '@angular/core';
 
 @Component({
     templateUrl: './course-list.component.html'
@@ -11,9 +12,9 @@ export class CourseListComponent implements OnInit {
 
     _courses: Course[] = [];
     
-    _filterBy: string;
+    _filterBy!: string;
 
-    constructor(private courseService: CourseService) { }
+    constructor(private courseService: CourseService){}
 
     ngOnInit(): void { 
         this.retrieveAll();
@@ -21,11 +22,11 @@ export class CourseListComponent implements OnInit {
 
     retrieveAll(): void { 
         this.courseService.retrieveAll().subscribe({
-            next: courses => {
+            next: (courses: Course[]) => {
                 this._courses = courses;
                 this.filteredCourses = this._courses;
             },
-            error: err => console.log('Error', err) 
+            error: (err: any) => console.log('Error', err) 
         })
     }
 
@@ -35,7 +36,7 @@ export class CourseListComponent implements OnInit {
                 console.log('Deleted with success');
                 this.retrieveAll();
             },
-            error: err => console.log('Error', err)
+            error: (err: any) => console.log('Error', err)
         })
     }
 

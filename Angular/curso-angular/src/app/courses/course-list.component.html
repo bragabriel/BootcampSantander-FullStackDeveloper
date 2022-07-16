@@ -34,6 +34,7 @@
             </td>
             <td>
                 <a [routerLink]="['/courses/info', course.id]" class="btn btn-primary mr-2">Edit</a>
+                <button (click)="deleteById(course.id)" class="btn btn-danger">Delete</button>
             </td>
         </tr>
     </tbody>
