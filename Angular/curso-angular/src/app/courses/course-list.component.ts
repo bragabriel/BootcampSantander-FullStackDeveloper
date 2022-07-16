@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 import { Course } from "./course";
+import { CourseService } from "./course-serice";
 
 @Component({/* Faz o Angular reconhecer a classe como elegível para ser um componente */
     selector: 'app-course-list',
@@ -12,28 +13,11 @@ export class CourseListComponent implements OnInit{ /* OnInit = Quando carregar 
 
         courses: Course[] = []; /* courses é um Array do tipo 'Course' */
 
+        constructor(private courseService: CourseService){
+
+        }
+
         ngOnInit(): void {
-            this.courses = [
-                {
-                    id: 1,
-                    name: 'Angular: Forms',
-                    imageUrl: '/assets/images/forms.png',
-                    price: 99.99,
-                    code: 'XPS-8796',
-                    duration: 120,
-                    rating: 4.5, 
-                    releaseDate: 'November, 2, 2019'
-                },
-                {
-                    id: 2,
-                    name: 'Angular: HTTP',
-                    imageUrl: '/assets/images/http.png',
-                    price: 49.99,
-                    code: 'LKL-1094',
-                    duration: 80,
-                    rating: 4.0, 
-                    releaseDate: 'December, 4, 2019'
-                }
-            ]
+            this.courses = this.courseService.retriveAll();
         }
 }
