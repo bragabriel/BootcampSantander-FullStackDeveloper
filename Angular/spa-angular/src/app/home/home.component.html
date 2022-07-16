@@ -38,14 +38,14 @@
     
   </div>
 
-  <table *ngIf="exibeTabela">
+  <table *ngIf="exibeTabela"> <!-- Diretiva (*ngIf)  --> <!-- Esse elemento table fica escondido caso o método exibeTabela seja false -->
     <tr>
       <th>Nome</th>
       <th>Idade</th>
       <th>E-mail</th>
       <th>Curso</th>
     </tr>
-    <tr *ngFor="let aluno of listaAlunos">
+    <tr *ngFor="let aluno of listaAlunos"> <!-- Diretiva -->
       <td>{{aluno.nome}}</td>
       <td>{{aluno.idade}}</td>
       <td>{{aluno.email}}</td>
