@@ -3,7 +3,7 @@ import { Course } from "./course";
 import { CourseService } from "./course-serice";
 
 @Component({/* Faz o Angular reconhecer a classe como elegível para ser um componente */
-    selector: 'app-course-list',
+   
 
     /* template: '<h2>Course List</h2>'    <-   Assim podemos setar até +/- 5 linhas*/
     templateUrl: './course-list.component.html' /* <- Assim podemos setar um template full, e pegar a Url */
