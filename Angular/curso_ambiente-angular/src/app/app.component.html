@@ -10,4 +10,11 @@
 
 <br>
 <!-- Diretivas Estruturais -->
-<h2 *ngIf="count > 7" class="text-center">O contador passou de 7</h2>
+<h2 *ngIf="count > 7; else menor" class="text-center">O contador passou de 7</h2>
+<!-- por debaixo dos panos, o * representa:
+<ng-template [ngIf]="count > 7">
+-->
+
+<ng-template #menor>
+  <h2>O contador é menor que 7</h2>
+</ng-template>
