@@ -62,5 +62,25 @@
   <li class="list-group-item" *ngSwitchCase="10 ">
    É igual a 10 
   </li>
-
 </ul>
+
+<br> <br>
+  <!-- Ng FOR -->
+  <p class="text-center">Iteração com Ng FOR</p>
+  <ul class="list-group mx-auto my-3 col-3">
+    <li class="list-group-item" *ngFor="let dado of pessoas">
+      O nome da pessoa é {{dado.nome}} {{dado.sobrenome}}
+    </li>
+  </ul>
+
+<br> <br>
+  <!-- Ng FOR (Por baixo dos panos) -->
+  <p class="text-center">Iteração com Ng FOR</p>
+  <ul class="list-group mx-auto my-3 col-3">
+    <ng-template ngFor let-dado [ngForOf]="pessoas">
+      <li class="list-group-item">
+        O nome da pessoa é {{dado.nome}} {{dado.sobrenome}}
+      </li>
+    </ng-template>
+  </ul>
+

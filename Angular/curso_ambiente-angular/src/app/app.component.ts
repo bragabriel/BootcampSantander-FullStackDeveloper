@@ -10,11 +10,29 @@ export class AppComponent implements OnInit {
 
   count = 0;
 
+  pessoas = [
+    {
+      nome: "Gabriel",
+      sobrenome: "Braga"
+    },
+    {
+      nome: "Ivonaldo",
+      sobrenome: "Soares"
+    },
+    {
+      nome: "Júnior",
+      sobrenome: "Santos"
+    },
+  ];
+
   constructor(){
 
   }
 
   ngOnInit(){
+
+    console.log(this.pessoas);
+
     let interval = setInterval(() => {
       this.count++;
       
