@@ -75,7 +75,7 @@
 
 <br> <br>
   <!-- Ng FOR (Por baixo dos panos) -->
-  <p class="text-center">Iteração com Ng FOR</p>
+  <p class="text-center">Iteração com Ng FOR (funcionamento por baixo dos panos)</p>
   <ul class="list-group mx-auto my-3 col-3">
     <ng-template ngFor let-dado [ngForOf]="pessoas">
       <li class="list-group-item">
@@ -84,3 +84,6 @@
     </ng-template>
   </ul>
 
+
+<h3>{{nome}}</h3>
+<button class="btn btn-success" (click)="clicou(nome)">Clique</button>
