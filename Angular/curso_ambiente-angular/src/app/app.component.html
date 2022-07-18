@@ -1,1 +1,13 @@
-<h1 class="text-success">Olá Angular</h1>
+<h1 class="text-success text-center">Olá Angular</h1>
+
+<!-- Diretivas de Atributos: -->
+<div
+  [ngStyle]="{ background: count < 5 ? 'red' : 'green'}"
+  [ngClass]="{custom: count > 5}"
+>
+  <h2 class="text-center">Contador: {{count}}</h2>
+</div>
+
+<br>
+<!-- Diretivas Estruturais -->
+<h2 *ngIf="count > 7" class="text-center">O contador passou de 7</h2>
