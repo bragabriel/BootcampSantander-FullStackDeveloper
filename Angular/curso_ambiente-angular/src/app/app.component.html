@@ -1,4 +1,4 @@
-<h1 class="text-success text-center">Olá Angular</h1>
+<h1 appMarcaTexto corDeFundo="red" corDoTexto="blue" class="text-center">Olá Angular</h1>
 
 
 <!-- Diretivas de Atributos: -->
@@ -8,7 +8,7 @@
     [ngStyle]="{ background: count < 5 ? 'red' : 'green'}"
     [ngClass]="{custom: count > 5}"
   >
-    <h2 class="text-center">Contador: {{count}}</h2>
+    <h2 appMarcaTexto class="text-center">Contador: {{count}}</h2>
 </div>
 
 
