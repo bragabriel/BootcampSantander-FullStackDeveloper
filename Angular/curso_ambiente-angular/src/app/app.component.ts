@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PeopleService } from './shared/services/people.service';
 
 @Component({
   selector: 'app-root',
@@ -14,26 +15,21 @@ export class AppComponent implements OnInit {
 
   pessoas = [
     {
-      nome: "Gabriel",
-      sobrenome: "Braga"
-    },
-    {
-      nome: "Ivonaldo",
-      sobrenome: "Soares"
-    },
-    {
-      nome: "Júnior",
-      sobrenome: "Santos"
+      firstName: '',
+      lastName: '',
+      age: 0
     },
   ];
 
-  constructor(){
+  /* Injetando o serviço na classe construtura do componente.
+  Ou seja, no momento em que for instânciado o app.component.ts, será injetado o serviço PeopleService */
+  constructor(private peopleService: PeopleService){
 
   }
 
   ngOnInit(){
 
-    console.log(this.pessoas);
+    this.getPeople();
 
     let interval = setInterval(() => {
       this.count++;
@@ -41,12 +37,22 @@ export class AppComponent implements OnInit {
       if(this.count === 10){
         clearInterval(interval);
       }
-
     }, 1000)
   }
 
   clicou(nome: string):void{
     console.log("Clicou", nome)
+  }
+
+  /* Criando um método getPeople do app.component.ts */
+  getPeople(){
+    /* Acessando o método getPeople do serviço */
+    this.peopleService.getPeople().subscribe(people => {
+                                  /* inscrevendo no Observable, que retorna uma função de callback com os dados*/
+      /* this.pessoas agora é people (resultado que veio do service) */
+      this.pessoas = people;
+    })
+                                  
   }
 
 }
