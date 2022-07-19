@@ -19,7 +19,7 @@ export class ListPeopleComponent implements OnInit {
   constructor(private peopleService: PeopleService) { }
 
   ngOnInit(): void {
-    this.getPeople
+    this.getPeople();
   }
 
   /* Criando um método getPeople do app.component.ts */
