@@ -1,7 +1,7 @@
 <div class="card w-100 my-5">
     <div class="card-body">
       <h1 class="card-title text-center">Formulário de Usuários</h1>
-      <form>
+      <form [formGroup]="userForm"> <!-- Passando os dados do form para o userForm -->
         <div class="row my-4">
           <div class="col-6">
             <div class="form-floating">
@@ -33,7 +33,7 @@
         <div class="row my-4">
           <div class="form-group col-12 mt-4">
             <button type="button" class="btn btn-outline-danger float-start">Cancelar</button>
-            <button type="button" class="btn btn-outline-success float-end">Enviar</button>
+            <button type="button" class="btn btn-outline-success float-end" (click)="createUser()">Enviar</button>
           </div>
         </div>
       </form>

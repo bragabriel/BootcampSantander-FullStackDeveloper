@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { User } from '../models/user';
@@ -8,7 +8,14 @@ import { User } from '../models/user';
 })
 export class UserService {
 
-  apiUrl = 'https://sheet.best/api/sheets/9bb18700-cf25-445b-bd50-066f21ac35bc'
+  apiUrl = 'https://sheet.best/api/sheets/9bb18700-cf25-445b-bd50-066f21ac35bc';
+
+  //Variável para o header da requisisão
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json'
+    })
+  }
 
   /* Injetando o HttpClient */
   constructor(private httpClient: HttpClient) { }
@@ -20,5 +27,22 @@ export class UserService {
 
     return this.httpClient.get<User[]>(this.apiUrl);
     //O retorno tbm vai ser do tipo <User[]> - Array de User
+  }
+
+
+  //Salva usuário no banco - CREATE
+  postUser(user: User):Observable<User>{
+    //Recebe um user do tipo User
+
+    return this.httpClient.post<User>(this.apiUrl, user, this.httpOptions);
+    //                                      url, objeto, header
+  }
+
+
+  //Exclui usuário do banco - DELETE
+  deleteUser(id:number):Observable<User>{
+    //Recebe um id do tipo number
+
+    return this.httpClient.delete<User>(`${this.apiUrl}/id/${id}`)
   }
 }
