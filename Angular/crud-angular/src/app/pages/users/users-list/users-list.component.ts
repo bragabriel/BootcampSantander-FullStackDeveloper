@@ -22,15 +22,23 @@ export class UsersListComponent implements OnInit {
   /* Método que vai na API, e traz os dados */
   getUsers(): void{
     /* Pegando a reposta do nosso serviço UserService */
-    this.userService.getUsers().subscribe(response => {
-    //                          subscribe retorna de CallBack o reponse da APi  
-      this.users = response
+    this.userService.getUsers().subscribe({
+      next: (v) => console.log(v),
+      error: (err) => console.error('Erro ao listar: ' + err.status),
+      complete: () => {
+        console.info('complete') 
+      }
     })
   }
 
   deleteUser(id: number):void{
     this.userService.deleteUser(id).subscribe(response => {
       console.log('user excluido')
+    }, (err) => {
+      console.log(err)
+    }, () => {
+      /* Depois de tudo isso ter */
+      this.getUsers() 
     })
   }
 }
