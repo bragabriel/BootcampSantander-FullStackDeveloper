@@ -1,1 +1,36 @@
-<p>data-binding works!</p>
+<br>
+<h3 class="um"><i>Interpolação:</i></h3> <h3>{{text}} {{retornaNome()}}</h3>
+
+
+<br>
+<h3 class="dois"><i>Interpolação de img:</i></h3>
+<img src="{{imgUrl}}" alt="{{imgAlt}}" > <!-- Forma não ideal -->
+
+<h3 class="dois"><i>Property Binding de img:</i></h3>
+<img [src]="imgUrl" [alt]="imgAlt"> <!-- Ideal -->
+
+
+<br><br>
+<h3 class="tres"><i>Event Binding (template D.O.M -> componente): *acessar console para ver </i></h3>
+<button (click)="clicouBtn()">Event Binding</button>
+
+
+<br><br>
+<h3 class="tres"><i>Event Binding (template D.O.M -> componente): *acessar console para ver </i></h3>
+<input #input (keyup.enter)="clicouInput(input.value)">
+
+{{ input.value }}
+
+
+<br><br>
+<h3 class="quatro"><i>Class Binding (template D.O.M -> componente): *acessar console para ver </i></h3>
+<button [attr.aria-label]="buttonText">{{buttonText}}</button>
+
+
+<br><br>
+<h3 [class.textred]="textRed"><i>Class Binding (template D.O.M -> componente): *acessar console para ver </i></h3>
+<button (click)="clicouClass()">Adicionando a class 'textRed'</button>
+
+    
+<br><br>
+<h3 class="seis"><i>Style Binding (template D.O.M -> componente): *acessar console para ver </i></h3>
