@@ -12,6 +12,12 @@ export class DataBindingComponent implements OnInit {
   imgAlt = 'Essa é uma imagem';
   buttonText = 'Criando atributo e atribuindo valor direto pelo componente =)';
   textRed = false;
+  bgColor = 'green';
+  fontSize = '50px';
+  widthImg = 200;
+  heightImg = 200;
+  textInput = '';
+  botaoTexto = 'OI';
 
   constructor() { }
 
@@ -33,5 +39,9 @@ export class DataBindingComponent implements OnInit {
 
   clicouClass(){
     this.textRed = true
+  }
+
+  clicouNoFilho(text: any){
+    console.log(text)
   }
 }

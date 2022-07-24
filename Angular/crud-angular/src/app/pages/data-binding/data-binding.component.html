@@ -1,21 +1,26 @@
 <br>
+<!-- Interpolação = Do componente para o D.O.M -->
 <h3 class="um"><i>Interpolação:</i></h3> <h3>{{text}} {{retornaNome()}}</h3>
 
 
 <br>
+<!-- Interpolação -->
 <h3 class="dois"><i>Interpolação de img:</i></h3>
 <img src="{{imgUrl}}" alt="{{imgAlt}}" > <!-- Forma não ideal -->
 
+<!-- Property Binding = Do componente para o D.O.M -->
 <h3 class="dois"><i>Property Binding de img:</i></h3>
 <img [src]="imgUrl" [alt]="imgAlt"> <!-- Ideal -->
 
 
 <br><br>
+<!-- Event Binding = Do D.O.M para o Componente-->
 <h3 class="tres"><i>Event Binding (template D.O.M -> componente): *acessar console para ver </i></h3>
 <button (click)="clicouBtn()">Event Binding</button>
 
 
 <br><br>
+<!-- Event Binding = Do D.O.M para o Componente -->
 <h3 class="tres"><i>Event Binding (template D.O.M -> componente): *acessar console para ver </i></h3>
 <input #input (keyup.enter)="clicouInput(input.value)">
 
@@ -23,14 +28,33 @@
 
 
 <br><br>
-<h3 class="quatro"><i>Class Binding (template D.O.M -> componente): *acessar console para ver </i></h3>
+<!-- Atribute Binding -->
+<h3 class="quatro"><i>Atribute Binding (template D.O.M -> componente): add atributo ao botão </i></h3>
 <button [attr.aria-label]="buttonText">{{buttonText}}</button>
 
 
 <br><br>
+<!-- Class Binding -->
 <h3 [class.textred]="textRed"><i>Class Binding (template D.O.M -> componente): *acessar console para ver </i></h3>
 <button (click)="clicouClass()">Adicionando a class 'textRed'</button>
 
     
 <br><br>
-<h3 class="seis"><i>Style Binding (template D.O.M -> componente): *acessar console para ver </i></h3>
+<!-- Style Binding -->
+<h3 class="seis" [style.fontSize]="fontSize"><i>Style Binding (template D.O.M -> componente): *acessar console para ver </i></h3>
+<button [style.backgroundColor]="bgColor" [style.width.px]="widthImg" [style.height.px]="heightImg">Style Binding</button>
+
+
+<br><br>
+<!-- Two Way Data Binding = Precisa do FormsModule importado no 'app.module.ts'-->
+<h3 class="sete"><i>Two Way data-binding:</i> {{textInput}}</h3>
+<input type="text" class="form-control" [(ngModel)]="textInput">
+
+<br><br>
+
+<app-button [btnText]="'Enviar'" [btnType]="'btn-success'"></app-button><br><br>
+<app-button [btnText]="botaoTexto" [btnType]="'btn-primary'"></app-button><br><br>
+<app-button [btnText]="'Teste'" [btnType]="'btn-danger'" (clickChildren)="clicouNoFilho($event)"></app-button><br><br>
+<app-button><app-button><br><br>
+
+<br><br>
