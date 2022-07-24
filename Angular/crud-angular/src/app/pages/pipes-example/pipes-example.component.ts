@@ -15,6 +15,7 @@ export class PipesExampleComponent implements OnInit {
     idade: '20',
     profissao: 'Desenvolvedor'
   }
+  nomes = ['Gabriel', 'Ivonaldo', 'Ana'];
 
   constructor() { }
 
@@ -23,5 +24,9 @@ export class PipesExampleComponent implements OnInit {
 
   mudaValor(){
     this.number += 123;
+  }
+
+  add(text: string){
+    this.nomes.push(text);
   }
 }

@@ -35,3 +35,20 @@
    <p><b>Pipe Slice:</b></p>
    <p>{{ text | slice:1:4 }}</p>
 </div>
+
+<div class="container">
+    <div class="col">
+        <div class="row-6">
+            <div class="form-group">
+                <label for="text">Print Pipe Test: </label>
+                <input type="text" name="text" id="text" #nome>
+                <button class="btn btn-primary" (click)="add(nome.value)">add</button>
+            </div>
+        </div>
+        <div class="row-6">
+            <h3>Lista formatada</h3>
+            <p>Tamanho da lista {{ nomes.length }}</p>
+            <p>{{ nomes | printList }}</p>
+        </div>
+    </div>
+</div>
