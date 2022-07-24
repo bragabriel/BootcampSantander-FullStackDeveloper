@@ -18,6 +18,7 @@ export class DataBindingComponent implements OnInit {
   heightImg = 200;
   textInput = '';
   botaoTexto = 'OI';
+  number = 0;
 
   constructor() { }
 
@@ -43,5 +44,9 @@ export class DataBindingComponent implements OnInit {
 
   clicouNoFilho(text: any){
     console.log(text)
+  }
+
+  incrementa(){
+    this.number++;
   }
 }
