@@ -1,0 +1,37 @@
+<div class="form-group">
+    <label for="number">Number:</label>
+    <input type="text" [(ngModel)]="number" class="form-control" id="number">
+    <button class="btn btn-success" (click)="mudaValor()">Clique</button>
+</div>
+
+<div class="">
+    <p>{{ text | uppercase }}</p>
+<br>
+    <p><b>Formatação numérica</b></p>
+    <p>Sem formatação: </p>
+    <p>{{ number | number }}</p>
+<br>
+    <p>Com formatação: </p>
+    <p>{{ number | number:'2.0-1' }}</p>
+<br>
+   <p>Resultado em moeda: </p>
+   <p>{{ number | currency:'BRL' }}</p>
+<br>
+   <p>Resultado em porcentagem: </p>
+   <p>{{ number | percent }}</p>
+<br>
+   <p><b>Datas:</b> </p>
+   <p>{{ date }}</p>
+   <p>{{ date | date }}</p>
+   <p>{{ date | date:'full' }}</p>
+   <p>{{ date | date:'shortTime' }}</p>
+   <p>{{ date | date:'short':'pt' }}</p>
+   <p>{{ date | date:'dd/MMM/yyy':'pt' }}</p>
+
+<br>
+   <p><b>Pipe JSON:</b></p>
+   <p>{{ pessoa | json }}</p>
+<br>
+   <p><b>Pipe Slice:</b></p>
+   <p>{{ text | slice:1:4 }}</p>
+</div>
