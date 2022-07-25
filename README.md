@@ -48,6 +48,6 @@
 
 ## Desafios de Código :scroll:
 
-- [Desafios em JS](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Projetos-Desafios/JavaScript);</br>
+- [Desafios em JS](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Projetos-Desafios/JavaScript/Desafios);</br>
 
 - [Desafios em Java](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Java/desafios-de-codigo).</br>
