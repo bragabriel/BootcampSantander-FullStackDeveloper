@@ -1,5 +1,9 @@
 package praticando.java;
 
+import singleton.SingletonEager;
+import singleton.SingletonLazy;
+import singleton.SingletonLazyHolder;
+
 public class Main {
 
 	public static void main(String[] args) {

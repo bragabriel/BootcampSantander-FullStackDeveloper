@@ -1,4 +1,4 @@
-package praticando.java;
+package singleton;
 
 /*
   Singleton 'preguiçoso'.
