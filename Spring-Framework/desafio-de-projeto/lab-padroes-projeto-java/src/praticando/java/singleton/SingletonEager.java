@@ -1,4 +1,4 @@
-package singleton;
+package praticando.java.singleton;
 
 /*
   Singleton 'apressado'.
