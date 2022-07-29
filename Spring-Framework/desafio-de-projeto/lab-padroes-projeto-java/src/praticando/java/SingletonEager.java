@@ -6,7 +6,7 @@ package praticando.java;
 */
 public class SingletonEager {
 	
-	private static SingletonEager instancia;
+	private static SingletonEager instancia = new SingletonEager();
 	//Criando instância dele mesmo (Singleton)
 
 	
