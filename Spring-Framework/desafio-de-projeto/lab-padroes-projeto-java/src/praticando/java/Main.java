@@ -1,5 +1,6 @@
 package praticando.java;
 
+import praticando.java.facade.Facade;
 import praticando.java.singleton.SingletonEager;
 import praticando.java.singleton.SingletonLazy;
 import praticando.java.singleton.SingletonLazyHolder;
@@ -46,19 +47,21 @@ public class Main {
 		System.out.println();
 		System.out.println();
 		
+		
+		
 		/* *********************************************** */
-		/* Testes relacionados ao Design Pattern Singleton */
+		/* Testes relacionados ao Design Pattern Strategy */
 		/* *********************************************** */
 		
 		/*
 		 Padrões de projeto:
-		 - Criacionais: ... Strategy;
+		 - Comportamentais: ... Strategy;
 		 
-		 Singleton: O Padrão Singleton tem como definição garantir
-		  que uma classe tenha apenas uma instância de si mesma
-		  e que forneça um ponto global de acesso a ela.
-		  Ou seja, uma classe gerencia a própria instância dela
-		  além de evitar que qualquer outra classe crie uma instância dela.
+		 Strategy: O Strategy é um padrão de projeto comportamental
+		  que transforma um conjunto de comportamentos em objetos
+		  e os torna intercambiáveis dentro do objeto de contexto original.
+		  O objeto original, chamado contexto, mantém uma referência a
+		  um objeto strategy e o delega a execução do comportamento.
 		 */
 		
 		IComportamento normal = new ComportamentoNormal();
@@ -80,6 +83,29 @@ public class Main {
 		robo.mover();
 		robo.mover();
 		robo.mover();
+		
+		System.out.println();
+		System.out.println();
+		
+		
+		
+		/* *********************************************** */
+		/* Testes relacionados ao Design Pattern Facade */
+		/* *********************************************** */
+		
+		/*
+		 Padrões de projeto:
+		 - Estruturais: ... Facade;
+		 
+		 Facade: O Facade é um padrão de projeto estrutural que
+		  fornece uma interface simplificada (mas limitada) para
+		  um sistema complexo de classes, biblioteca, ou framework.
+		  Embora o Facade diminua a complexidade geral do aplicativo,
+		  também ajuda a mover dependências indesejadas para um só local.
+		 */
+		
+		Facade facade = new Facade();
+		facade.migrarCliente("Gabriel", "14801788");
 	}
 
 }
