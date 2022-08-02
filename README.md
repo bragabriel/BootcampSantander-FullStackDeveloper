@@ -58,6 +58,6 @@
 
 ## Bootcamp concluído em 01/08/2022
 
-<img src="https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/blob/main/BootcampConcluido.png" width="190px">
+<img src="https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/blob/main/BootcampConcluido.png" width="600px">
 
 </div>
