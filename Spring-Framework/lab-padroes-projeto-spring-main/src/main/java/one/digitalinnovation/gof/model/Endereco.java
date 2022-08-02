@@ -3,19 +3,20 @@ package one.digitalinnovation.gof.model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-/**
+/*
  * Os atributos desse modelo foram gerados automaticamente pelo site
  * jsonschema2pojo.org. Para isso, usamos o JSON de retorno da API do ViaCEP.
  * 
- * @see <a href="https://www.jsonschema2pojo.org">jsonschema2pojo.org</a>
- * @see <a href="https://viacep.com.br">ViaCEP</a>
+ * JsonSchema é utilizado para gerar a estrutura em formato json
+ * @see <a href="https://www.jsonschema2pojo.org">jsonschema2pojo.org</a>+
  * 
- * @author falvojr
+ * WebService para consulta de CEP
+ * @see <a href="https://viacep.com.br">ViaCEP</a>
  */
 @Entity
 public class Endereco {
 
-	@Id
+	@Id //Id CEP - para evitar duplicados
 	private String cep;
 	private String logradouro;
 	private String complemento;
