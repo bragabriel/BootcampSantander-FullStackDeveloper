@@ -42,7 +42,9 @@
 - [Recriando a página de Login do Instagram | HTML & CSS](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Projetos-Desafios/HTML-CSS/Instagram-LandingPage);</br>
 - [To-do List | JavaScript](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Projetos-Desafios/JavaScript/To-do_list);</br>
 
-- [Banco Digital usando P.O.O | Java](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Java/desafio-de-projeto).</br></br>
+- [Banco Digital usando P.O.O | Java](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Java/desafio-de-projeto);</br>
+
+- [Padrões de projeto com Spring-Boot e consumo de RestAPI](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Spring-Framework/lab-padroes-projeto-spring-main).</br></br>
 
 ## Desafios de Código :scroll:
 
