@@ -29,7 +29,7 @@
 
 <br>
 <br>
-<img src="https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/blob/main/Spring-Framework/lab-padroes-projeto-spring-main/img/springboot-img.png" width="500px"></img> <br></br>
+<img src="https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/blob/main/Spring-Framework/lab-padroes-projeto-spring-main/img/springboot-img.png" width="650px"></img> <br></br>
 
 <br>
-<img src="https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/blob/main/Spring-Framework/lab-padroes-projeto-spring-main/img/swagger-img.png" width="500px"></img> <br></br>
+<img src="https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/blob/main/Spring-Framework/lab-padroes-projeto-spring-main/img/swagger-img.png" width="650px"></img> <br></br>
