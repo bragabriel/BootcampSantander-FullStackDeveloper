@@ -1,6 +1,14 @@
-# Desafio de Projeto - Java
+<div align="center">
 
-### Descrição: Reforce seu conhecimento em Programação Orientada a Objetos (POO) em Java com um desafio de projeto totalmente prático. Para isso, os pilares da orientação a objetos são devidamente explorados no contexto bancário, onde o tutor implementa um projeto de referência, de forma prática e interativa. Sendo assim, você poderá desenvolver sua capacidade de abstração reproduzindo essa solução. Além disso, caso queira ir além, implemente suas próprias evoluções e melhorias.
+<img src="https://github.com/bragabriel/Bootcamp-FullStackDeveloper/blob/main/logo-bootcamp.png" width="190px">
+
+# Santander Bootcamp Fullstack Developer
+
+</div>
+
+<br>
+
+## Desafio de Projeto Java: Criando um Banco Digital com Programação Orientada a Objetos (POO).
 
 <br>
 
