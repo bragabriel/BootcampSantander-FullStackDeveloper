@@ -44,8 +44,6 @@
 
 - [Banco Digital usando P.O.O | Java](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Java/desafio-de-projeto).</br></br>
 
-- 
-
 ## Desafios de Código :scroll:
 
 - [Desafios em JS](https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/tree/main/Projetos-Desafios/JavaScript/Desafios);</br>
