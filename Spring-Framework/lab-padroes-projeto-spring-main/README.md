@@ -29,11 +29,7 @@
 
 <br>
 <br>
-<img src="https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/blob/main/Projetos-Desafios/HTML-CSS/Flex-Projeto/images/home_p1.png"></img> <br></br>
+<img src="https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/blob/main/Spring-Framework/lab-padroes-projeto-spring-main/img/springboot-img.png" width="500px"></img> <br></br>
 
 <br>
-<img src="https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/blob/main/Projetos-Desafios/HTML-CSS/Flex-Projeto/images/home_p2.png"></img> <br></br>
-
-# 
-
-
+<img src="https://github.com/bragabriel/BootcampSantander-FullStackDeveloper/blob/main/Spring-Framework/lab-padroes-projeto-spring-main/img/swagger-img.png" width="500px"></img> <br></br>
