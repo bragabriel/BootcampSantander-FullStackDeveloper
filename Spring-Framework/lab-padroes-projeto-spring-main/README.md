@@ -17,7 +17,7 @@
 - Strategy/Repository;
 - Facade.
 
-### Também trabalhado e utilizado:
+### Também foi trabalhado e utilizado:
 
 - Spring Framework;
 - SpringBoot;
